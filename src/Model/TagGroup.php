@@ -14,7 +14,7 @@ use Illuminate\Support\Collection;
  */
 class TagGroup extends Model
 {
-    protected $table = 'tagging_tag_groups';
+    protected $table = config('tagging.tag_groups');
     public $timestamps = false;
     protected $fillable = ['name'];
 
