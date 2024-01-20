@@ -30,10 +30,14 @@ return [
 
     'tag_group_model' => '\Conner\Tagging\Model\TagGroup',
 
-    // Tables
-    'table_tags' => 'tags',
-    
-    'table_tag_goups' => 'tag_groups',
-    
-    'table_tags_taggings' => 'tag_taggings',
+
+    // Database Tables
+    'tables' => [
+        
+        'tags' => 'tags',
+        
+        'tag_goups' => 'tag_groups',
+        
+        'tags_taggings' => 'tag_taggings',
+    ],
 ];
