@@ -15,9 +15,9 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Tagged extends Model
 {
-    protected $table = config('tagging.tags_tagged');
+    protected $table = config('tagging.table.tags_tagged');
     public $timestamps = false;
-    protected $fillable = ['tag_name', 'tag_slug'];
+    protected $fillable = ['name', 'slug'];
 
     public function __construct(array $attributes = [])
     {
@@ -44,6 +44,6 @@ class Tagged extends Model
     public function tag()
     {
         $model = TaggingUtility::tagModelString();
-        return $this->belongsTo($model, 'tag_slug', 'slug');
+        return $this->belongsTo($model, 'slug', 'slug');
     }
 }
