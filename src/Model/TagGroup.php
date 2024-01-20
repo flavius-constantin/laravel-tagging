@@ -35,7 +35,7 @@ class TagGroup extends Model
     {
         $model = TaggingUtility::tagModelString();
 
-        return $this->hasMany($model, 'tag_group_id');
+        return $this->hasMany($model, 'group_id');
     }
 
     /**
