@@ -29,4 +29,11 @@ return [
     'tagged_model' => '\Conner\Tagging\Model\Tagged',
 
     'tag_group_model' => '\Conner\Tagging\Model\TagGroup',
+
+    // Tables
+    'table_tags' => 'tags',
+    
+    'table_tag_goups' => 'tag_groups',
+    
+    'table_tags_taggings' => 'tag_taggings',
 ];
