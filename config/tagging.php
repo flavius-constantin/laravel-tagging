@@ -38,6 +38,6 @@ return [
         
         'tag_goups' => 'tag_groups',
         
-        'tags_taggings' => 'tag_taggings',
+        'tags_tagged' => 'tag_tagged',
     ],
 ];
