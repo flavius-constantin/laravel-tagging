@@ -15,7 +15,7 @@ use Illuminate\Database\Eloquent\Model;
  */
 class Tagged extends Model
 {
-    protected $table = 'tagging_tagged';
+    protected $table = config('tagging.tags_tagged');
     public $timestamps = false;
     protected $fillable = ['tag_name', 'tag_slug'];
 
